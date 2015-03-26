@@ -16,6 +16,10 @@
       <tr>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
+         <td>
+        <%= link_to "Send Message", "#", class: "btn btn-success btn-xs start-conversation",
+                    "data-sid" => current_user.id, "data-rip" => user.id %>
+      </td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,3 +31,5 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+
+

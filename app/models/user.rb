@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
          has_many :conversations, :foreign_key => :sender_id
+         has_many :listings
 end

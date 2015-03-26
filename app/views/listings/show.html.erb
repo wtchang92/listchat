@@ -1,0 +1,64 @@
+
+
+
+
+<p id="notice"><%= notice %></p>
+
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><%= @listing.name %>
+                    <small><%= link_to @listing.user.name, user_path(@listing.user) %></small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Price <%= @listing.price %></h3>
+                <p><%= @listing.description %></p>
+                <h3>Project Details</h3>
+                <ul>
+                    <li>how many chats are there for this listing</li>
+                    <li>number of listing Views</li>
+                    <li>number of people Favorited this listing/tagged/bookmarked </li>
+                    <li>Comments</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        
+        <!-- /.row -->
+
+        <hr>
+
+   
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+

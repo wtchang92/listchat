@@ -1,0 +1,10 @@
+development:
+  server: "http://localhost:9292/faye"
+  secret_token: "secret"
+test:
+  server: "http://localhost:9292/faye"
+  secret_token: "secret"
+production:
+  server: "http://wtchang-chat.herokuapp.com/faye"
+  secret_token: "79e7b9dbda5fe822bcb9091680f4b06f0286b333af1a8c53b5fad5ccb7ab4fc7"
+  signature_expiration: 86400 # one day
